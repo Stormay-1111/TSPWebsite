@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=Edge">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home</title>
+    <link rel="stylesheet" href="about_stylesheet.css">
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+        <header class="header">
+            <div class = "logo">
+                <img onclick = "window.location.href='home.html'" id = "Logo" src="logo.png" alt="TC">
+            </div>
+
+            <nav class = "navbar">
+                <a href="home.html">Home</a>
+                <a href="main.html">Diagnosis</a>
+                <a href="about.html" class="active">About</a>
+
+            </nav>
+        </header>
+            
+            <div class = "content">
+                <h1 id = h1>About</h1>
+                <p id = "p1">DermAI is a teledermatology tool that uses deep learning to give you a diagnosis within seconds.</p>
+                <p id = "p2">The model is trained on hundreds of images of melanocytic and non-melanocytic nevi from the ISIC archive using Microsoft Azure Custom Vision. Simply submit an image from your device on the "Diagnosis" page and results will be delivered within a couple of seconds.</p>
+            </div>
+            
+
+    <script src= "about.js">
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=Edge">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Main</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main_stylesheet.css">
+    <link rel="icon" href="logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@microsoft/customvision-tfjs@1.3.0"></script>
+
+</head>
+
+<body>
+        <header class="header">
+            <div class = "logo">
+                <img onclick = "window.location.href='home.html'" id = "Logo" src="logo.png" alt="TC">
+            </div>
+
+            <nav class = "navbar">
+                <a href="home.html">Home</a>
+                <a href="main.html" class="active">Diagnosis</a>
+                <a href="about.html">About</a>
+
+            </nav>
+        </header>
+            <div class = "content">
+                <h1 id = "main_h1">Get a diagnosis</h1>
+                <p id = "main_p1">Submit an image for diagnosis.</p>
+                <div id = "buttons">
+                    <box-icon name="image-alt" class = "boxicon" size='md'></box-icon>
+                    <input id = "input" type="file"/>
+                    <div id = "control">
+                        <box-icon name="log-in-circle" class = "boxicon" size='md'></box-icon>
+                        <input id="resultsButton" type="button" value="Get Results" onChange="resultsButton();" />
+                        <box-icon name="reset" class = "boxicon" size='md'></box-icon>
+                        <input type="button" id="reset" value = "Reset" onChange="resetButton">
+                    </div>
+                </div>
+                <div class="loader" id = "loader"></div>
+                <div id = "results">
+                    <p id = "resultsp1">Results:</p>
+                    <p id = "probabilityp0"></p>
+                    <p id = "probabilityp1"></p>
+                    <p id = "conclusionp"></p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Disclaimer: DermAI is an educational project aiming to assess the practical viability of deep learning in dermatology. The results presented by this tool should not be considered a valid or genuine medical diagnosis.</p>
+              </div>
+              
+ 
+
+    <script type = "module" src= "main.js">
+    </script>
+    
+</body>
+</html>

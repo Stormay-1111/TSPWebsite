@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", Outfit;
+}
+
+body {
+    min-height: 100vh;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 10%;
+    background: #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: #7700ff;
+    border-width: 3px;
+}
+
+.logo {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-right: 50px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 23px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 90px;
+}
+
+.navbar a.active {
+    font-weight: 600;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: .3s;
+
+}
+
+.navbar a:hover {
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.logo {
+    align-items: left;
+}
+
+.logo #Logo {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    width: 40%;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.content {
+    margin: auto;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+
+#home_h1 {
+    margin: auto;
+    width: 40%;
+    font-size: 55px;
+    color: #fff;
+    padding-bottom: 20px;
+    color: #000000;
+}
+
+
+#mainLink {
+    text-align: center;
+    margin: auto;
+    font-size: 35px;
+    color: #000000;
+    padding-top: 0px;
+}
+
+.btn {
+    text-align: center;
+    padding: 10px 28px;
+    background: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
